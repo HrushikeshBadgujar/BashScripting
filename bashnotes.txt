@@ -1,0 +1,46 @@
+cat /etc/shells  -> shows all shells present in system
+which bash -> display bash path
+
+add bash path to all script files we are making
+
+
+***********************************
+********** First Script ***********
+********* helloScript.sh **********
+
+
+create file -> touch helloScript.sh
+
+add below lines
+
+#! /bin/bash
+
+echo "Hello bash script"
+
+save and quit
+check executable permission with ls -al
+if not then add executable permission by chmod +x helloScript.sh
+then run the script by ./helloScript.sh
+it will print following line
+Hello bash script
+
+***********************************
+
+** redirect to fil
+
+#! /bin/bash
+
+echo "Redirect to file" > file.txt
+
+***********************************
+
+** take input and redirect to file1.txt
+
+#! /bin/bash
+
+cat > file1.txt
+
++ cat >> file1.txt -> appends without replace
+
+***********************************
+
