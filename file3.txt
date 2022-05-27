@@ -1,0 +1,17 @@
+total 56
+drwxrwxr-x 3 blackknight blackknight 4096 May 27 19:23 .
+drwxr-xr-x 6 blackknight blackknight 4096 May 27 14:31 ..
+-rw-rw-r-- 1 blackknight blackknight 3487 May 27 19:17 bashnotes.txt
+-rwxrwxr-x 1 blackknight blackknight  242 May 27 15:47 comments.sh
+-rwxrwxr-x 1 blackknight blackknight  788 May 27 16:08 conditionalstatements.sh
+-rw-rw-r-- 1 blackknight blackknight   30 May 27 14:59 file1.txt
+-rw-rw-r-- 1 blackknight blackknight    0 May 27 19:23 file3.txt
+-rw-rw-r-- 1 blackknight blackknight    0 May 27 19:23 file4.txt
+-rw-rw-r-- 1 blackknight blackknight   21 May 27 14:55 file.txt
+drwxrwxr-x 8 blackknight blackknight 4096 May 27 19:18 .git
+-rwxrwxr-x 1 blackknight blackknight   39 May 27 15:03 helloScript.sh
+-rwxrwxr-x 1 blackknight blackknight  720 May 27 18:57 loop.sh
+-rwxrwxr-x 1 blackknight blackknight   53 May 27 14:55 redirectToFile.sh
+-rwxrwxr-x 1 blackknight blackknight  556 May 27 19:15 scriptInput.sh
+-rwxrwxr-x 1 blackknight blackknight  116 May 27 19:22 scriptOutput.sh
+-rwxrwxr-x 1 blackknight blackknight   30 May 27 14:58 takeInputAndRedirectToFile1.sh
