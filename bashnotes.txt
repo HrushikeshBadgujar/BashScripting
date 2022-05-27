@@ -38,9 +38,85 @@ echo "Redirect to file" > file.txt
 
 #! /bin/bash
 
-cat > file1.txt
+cat > file1.txt -> replace text in file1
 
-+ cat >> file1.txt -> appends without replace
++ cat >> file1.txt -> appends without replace in file1
 
 ***********************************
+
+** comments
+
+starts with # for single line comment
+
+: ' rghejogr '  -> multiline comment
+
+to show comments on output use heredocdelimiter use following :
+
+cat << startcomment
+this two lines of codes will be display as comment in output
+it starts and ends with same name
+startcomment
+
+***********************************
+
+** conditional statements
+
+-eq ->equal
+-ne -> not equal
+-gt ->greater than
+
+#! /bin/bash
+
+count=5
+
+#if 
+if [ $count -eq 10  ]
+then 
+	echo "condition is true"
+fi
+
+#if else
+if (( $count > 10 ))
+then 
+	echo "condition is true"
+else 
+	echo "condition is false"
+fi
+
+#if else if
+if (( $count > 10 ))
+then 
+	echo "condition is true"
+elif (( $count <= 9 ))
+then
+	echo "condition is true"
+else
+	echo "condition is false"
+fi
+
+# and operator
+age=10
+#if [[ "$age" -gt 18  &&  "$age" -lt 40 ]] same
+#if [ "$age" -gt 18  -a  "$age" -lt 40 ] same
+if [ "$age" -gt 18 ] && [ "$age" -lt 40 ]
+then 
+	echo "Age is correct"
+else
+	echo "Age is not correct"
+fi
+
+
+# or operator
+age=25
+#if [[ "$age" -gt 18  ||  "$age" -lt 40 ]] same
+#if [ "$age" -gt 18  -o  "$age" -lt 40 ] same
+if [ "$age" -gt 18 ] || [ "$age" -lt 40 ]
+then 
+	echo "Age is correct"
+else
+	echo "Age is not correct"
+fi
+
+************************************
+
 
