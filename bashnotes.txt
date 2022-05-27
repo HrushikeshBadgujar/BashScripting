@@ -282,5 +282,102 @@ echo ${st1^}
 echo ${st2^^} 
 
 ***************************************
+** arithmatic
+
+#! /bin/bash
+
+echo 31+21
+
+n1=15
+n2=30
+
+# arithmatic
+echo $(( n1 + n2 ))
+echo $(( n1 - n2 ))
+echo $(( n1 * n2 ))
+echo $(( n1 / n2 ))
+echo $(( n1 % n2 ))
+
+
+# using expr
+echo $(expr $n1 + $n2 )
+echo $(expr $n1 - $n2 )
+echo $(expr $n1 \* $n2 )
+echo $(expr $n1 / $n2 )
+echo $(expr $n1 % $n2 )
+
+
+# hex to decimal
+echo "enter hex no of ur choice"
+read hex
+
+echo -n "decimal value of $hex is : "
+echo "obase=10;ibase=16; $hex" | bc
+
+
+**************************************
+** declare command
+
+#! /bin/bash
+
+# create read only variable
+
+declare -r pwdfile=/etc/passwd
+
+echo $pwdfile
+
+pwdfile=/etc/abc.txt
+
+echo $pwdfile
+
+*************************************
+** arrays 
+
+#! /bin/bash
+
+car=('BMW' 'Toyota' 'Honda')
+
+# display all 
+echo "${car[@]}"
+
+# display 1st object
+echo "${car[1]}"
+
+# display index
+echo "${!car[@]}"
+
+# count total object present
+echo "${#car[@]}"
+
+unset car[2]
+
+# display all 
+echo "${car[@]}"
+
+# display 1st object
+echo "${car[1]}"
+
+# display index
+echo "${!car[@]}"
+
+# count total object present
+echo "${#car[@]}"
+
+car[2]='Mercedez'
+
+# display all 
+echo "${car[@]}"
+
+# display 1st object
+echo "${car[1]}"
+
+# display index
+echo "${!car[@]}"
+
+# count total object present
+echo "${#car[@]}"
+
+
+****************************************
 
 
